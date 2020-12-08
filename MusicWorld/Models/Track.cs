@@ -12,7 +12,7 @@ namespace MusicWorld.Models
         public DateTime Release { get; set; }
         public Genre Genre { get; set; }
 
-        public virtual ICollection<TrackAlbum> TrackAlbums { get; set; }
+        public Album Album { get; set; }   
         public virtual ICollection<ArtistTrack> ArtistTracks { get; set; }
 
     }
