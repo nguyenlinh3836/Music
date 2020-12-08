@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-<<<<<<< HEAD
-
-namespace MusicWorld.Models
-{
-    public class SeedData
-    {
-
-=======
+﻿using System.Linq;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
@@ -18,9 +7,11 @@ namespace MusicWorld.Models
 {
     public static class SeedData
     {
+
         public static void EnsurePopulated(IApplicationBuilder app)
         {
-            MusicDbContext context = app.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<MusicDbContext>();
+            MusicDbContext context = app.ApplicationServices
+                .CreateScope().ServiceProvider.GetRequiredService<MusicDbContext>();
 
             if (context.Database.GetPendingMigrations().Any())
             {
@@ -32,8 +23,8 @@ namespace MusicWorld.Models
                 context.Genres.AddRange(
                         new Genre
                         {
-                            GenreID= 1,
-                            GenreName= "Rock"
+                            GenreID = 1,
+                            GenreName = "Rock"
                         },
                         new Genre
                         {
@@ -55,11 +46,9 @@ namespace MusicWorld.Models
                              GenreID = 5,
                              GenreName = "Bolero"
                          }
-                       
                        );
                 context.SaveChanges();
             }
         }
->>>>>>> Phuong
     }
 }
