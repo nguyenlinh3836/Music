@@ -30,6 +30,9 @@ namespace MusicWorld
                 opts.UseSqlServer(
                      Configuration["ConnectionStrings:MusicWorldConnection"]);
             });
+            services.AddScoped<IMusicRepository,EFMusicRepository>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

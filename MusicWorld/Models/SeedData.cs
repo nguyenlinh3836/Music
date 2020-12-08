@@ -7,5 +7,6 @@ namespace MusicWorld.Models
 {
     public class SeedData
     {
+
     }
 }
