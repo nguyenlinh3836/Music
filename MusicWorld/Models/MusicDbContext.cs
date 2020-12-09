@@ -17,6 +17,8 @@ namespace MusicWorld.Models
         public DbSet<ArtistAlbum> ArtistAlbums { get; set; }        
         public DbSet<ArtistTrack> ArtistTracks { get; set; }
 
+      
+
 
     }    
 }

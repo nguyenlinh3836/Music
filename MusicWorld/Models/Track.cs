@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,11 +8,15 @@ namespace MusicWorld.Models
 {
     public class Track
     {
+        [Key]
         public int TrackID { get; set; }
         public string TrackName { get; set; }
-        public DateTime Release { get; set; }
+        public string TrackLink { get; set; }
+        public string Duration { get; set; }
+        public string UrlImg { get; set; }
+        public int? GenreID { get; set; }
         public Genre Genre { get; set; }
-
+        public int? AlbumID { get; set; }
         public Album Album { get; set; }   
         public virtual ICollection<ArtistTrack> ArtistTracks { get; set; }
 
