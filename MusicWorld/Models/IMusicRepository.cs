@@ -11,5 +11,6 @@ namespace MusicWorld.Models
         IQueryable<Genre> Genres{ get; }
         IQueryable<Album> Albums{ get; }
         IQueryable<Artist> Artists { get; }
+        
     }
 }

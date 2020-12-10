@@ -17,7 +17,7 @@ namespace MusicWorld.Models
         public string UrlImg { get; set; }
         public int? GenreID { get; set; }
         public Genre Genre { get; set; }
-        public int? AlbumID { get; set; }
+        public int? AlbumId { get; set; }
         public virtual Album Album { get; set; }   
         public virtual ICollection<ArtistTrack> ArtistTracks { get; set; }
 
