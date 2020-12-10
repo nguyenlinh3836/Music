@@ -10,7 +10,7 @@ using MusicWorld.Models;
 namespace MusicWorld.Migrations
 {
     [DbContext(typeof(MusicDbContext))]
-    [Migration("20201210071828_InitialCreate")]
+    [Migration("20201210102806_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -65,11 +65,9 @@ namespace MusicWorld.Migrations
             modelBuilder.Entity("MusicWorld.Models.ArtistAlbum", b =>
                 {
                     b.Property<int>("ArtistId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<int>("AlbumId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.HasKey("ArtistId", "AlbumId");
@@ -82,11 +80,9 @@ namespace MusicWorld.Migrations
             modelBuilder.Entity("MusicWorld.Models.ArtistTrack", b =>
                 {
                     b.Property<int>("ArtistId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<int>("TrackId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.HasKey("ArtistId", "TrackId");
@@ -98,7 +94,7 @@ namespace MusicWorld.Migrations
 
             modelBuilder.Entity("MusicWorld.Models.Genre", b =>
                 {
-                    b.Property<int>("GenreID")
+                    b.Property<int>("GenreId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
@@ -106,14 +102,14 @@ namespace MusicWorld.Migrations
                     b.Property<string>("GenreName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("GenreID");
+                    b.HasKey("GenreId");
 
                     b.ToTable("Genres");
                 });
 
             modelBuilder.Entity("MusicWorld.Models.Track", b =>
                 {
-                    b.Property<int>("TrackID")
+                    b.Property<int>("TrackId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
@@ -124,7 +120,7 @@ namespace MusicWorld.Migrations
                     b.Property<string>("Duration")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("GenreID")
+                    b.Property<int?>("GenreId")
                         .HasColumnType("int");
 
                     b.Property<string>("TrackLink")
@@ -138,11 +134,11 @@ namespace MusicWorld.Migrations
                     b.Property<string>("UrlImg")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("TrackID");
+                    b.HasKey("TrackId");
 
                     b.HasIndex("AlbumId");
 
-                    b.HasIndex("GenreID");
+                    b.HasIndex("GenreId");
 
                     b.ToTable("Tracks");
                 });
@@ -193,7 +189,7 @@ namespace MusicWorld.Migrations
 
                     b.HasOne("MusicWorld.Models.Genre", "Genre")
                         .WithMany("Tracks")
-                        .HasForeignKey("GenreID");
+                        .HasForeignKey("GenreId");
 
                     b.Navigation("Album");
 

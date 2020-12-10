@@ -39,13 +39,13 @@ namespace MusicWorld.Migrations
                 name: "Genres",
                 columns: table => new
                 {
-                    GenreID = table.Column<int>(type: "int", nullable: false)
+                    GenreId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     GenreName = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Genres", x => x.GenreID);
+                    table.PrimaryKey("PK_Genres", x => x.GenreId);
                 });
 
             migrationBuilder.CreateTable(
@@ -76,18 +76,18 @@ namespace MusicWorld.Migrations
                 name: "Tracks",
                 columns: table => new
                 {
-                    TrackID = table.Column<int>(type: "int", nullable: false)
+                    TrackId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     TrackName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     TrackLink = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Duration = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UrlImg = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    GenreID = table.Column<int>(type: "int", nullable: true),
+                    GenreId = table.Column<int>(type: "int", nullable: true),
                     AlbumId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tracks", x => x.TrackID);
+                    table.PrimaryKey("PK_Tracks", x => x.TrackId);
                     table.ForeignKey(
                         name: "FK_Tracks_Albums_AlbumId",
                         column: x => x.AlbumId,
@@ -95,10 +95,10 @@ namespace MusicWorld.Migrations
                         principalColumn: "AlbumId",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Tracks_Genres_GenreID",
-                        column: x => x.GenreID,
+                        name: "FK_Tracks_Genres_GenreId",
+                        column: x => x.GenreId,
                         principalTable: "Genres",
-                        principalColumn: "GenreID",
+                        principalColumn: "GenreId",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -122,7 +122,7 @@ namespace MusicWorld.Migrations
                         name: "FK_ArtistTracks_Tracks_TrackId",
                         column: x => x.TrackId,
                         principalTable: "Tracks",
-                        principalColumn: "TrackID",
+                        principalColumn: "TrackId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -142,9 +142,9 @@ namespace MusicWorld.Migrations
                 column: "AlbumId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Tracks_GenreID",
+                name: "IX_Tracks_GenreId",
                 table: "Tracks",
-                column: "GenreID");
+                column: "GenreId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
