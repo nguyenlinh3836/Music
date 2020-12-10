@@ -10,13 +10,13 @@ namespace MusicWorld.Models
     public class Track
     {
       
-        public int TrackID { get; set; }
+        public int TrackId { get; set; }
         [Required, StringLength(100), Display(Name = "TrackName")]
         public string TrackName { get; set; }
         public string TrackLink { get; set; }
         public string Duration { get; set; }
         public string UrlImg { get; set; }
-        public int? GenreID { get; set; }
+        public int? GenreId { get; set; }
         public Genre Genre { get; set; }
        
         public int? AlbumId { get; set; }

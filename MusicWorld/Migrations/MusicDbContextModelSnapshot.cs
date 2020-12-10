@@ -92,7 +92,7 @@ namespace MusicWorld.Migrations
 
             modelBuilder.Entity("MusicWorld.Models.Genre", b =>
                 {
-                    b.Property<int>("GenreID")
+                    b.Property<int>("GenreId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
@@ -100,25 +100,25 @@ namespace MusicWorld.Migrations
                     b.Property<string>("GenreName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("GenreID");
+                    b.HasKey("GenreId");
 
                     b.ToTable("Genres");
                 });
 
             modelBuilder.Entity("MusicWorld.Models.Track", b =>
                 {
-                    b.Property<int>("TrackID")
+                    b.Property<int>("TrackId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int>("AlbumId")
+                    b.Property<int?>("AlbumId")
                         .HasColumnType("int");
 
                     b.Property<string>("Duration")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("GenreID")
+                    b.Property<int?>("GenreId")
                         .HasColumnType("int");
 
                     b.Property<string>("TrackLink")
@@ -132,11 +132,11 @@ namespace MusicWorld.Migrations
                     b.Property<string>("UrlImg")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("TrackID");
+                    b.HasKey("TrackId");
 
                     b.HasIndex("AlbumId");
 
-                    b.HasIndex("GenreID");
+                    b.HasIndex("GenreId");
 
                     b.ToTable("Tracks");
                 });
@@ -183,13 +183,11 @@ namespace MusicWorld.Migrations
                 {
                     b.HasOne("MusicWorld.Models.Album", "Album")
                         .WithMany("Tracks")
-                        .HasForeignKey("AlbumId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AlbumId");
 
                     b.HasOne("MusicWorld.Models.Genre", "Genre")
                         .WithMany("Tracks")
-                        .HasForeignKey("GenreID");
+                        .HasForeignKey("GenreId");
 
                     b.Navigation("Album");
 
