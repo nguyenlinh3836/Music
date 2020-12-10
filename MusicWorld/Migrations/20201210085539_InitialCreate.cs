@@ -83,7 +83,7 @@ namespace MusicWorld.Migrations
                     Duration = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UrlImg = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     GenreID = table.Column<int>(type: "int", nullable: true),
-                    AlbumId = table.Column<int>(type: "int", nullable: true)
+                    AlbumId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -93,7 +93,7 @@ namespace MusicWorld.Migrations
                         column: x => x.AlbumId,
                         principalTable: "Albums",
                         principalColumn: "AlbumId",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Tracks_Genres_GenreID",
                         column: x => x.GenreID,

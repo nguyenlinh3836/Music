@@ -9,11 +9,8 @@ namespace MusicWorld.Models
 {
     public class ArtistTrack
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Key]
-        public int ArtistId { get; set; }
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Key]
+        public int ArtistId { get; set; }     
+     
         public int TrackId { get; set; }
         public Artist Artist { get; set; }
         public Track Track { get; set; }

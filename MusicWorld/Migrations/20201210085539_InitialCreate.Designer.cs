@@ -10,7 +10,7 @@ using MusicWorld.Models;
 namespace MusicWorld.Migrations
 {
     [DbContext(typeof(MusicDbContext))]
-    [Migration("20201210071828_InitialCreate")]
+    [Migration("20201210085539_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -65,11 +65,9 @@ namespace MusicWorld.Migrations
             modelBuilder.Entity("MusicWorld.Models.ArtistAlbum", b =>
                 {
                     b.Property<int>("ArtistId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<int>("AlbumId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.HasKey("ArtistId", "AlbumId");
@@ -82,11 +80,9 @@ namespace MusicWorld.Migrations
             modelBuilder.Entity("MusicWorld.Models.ArtistTrack", b =>
                 {
                     b.Property<int>("ArtistId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<int>("TrackId")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.HasKey("ArtistId", "TrackId");
@@ -118,7 +114,7 @@ namespace MusicWorld.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int?>("AlbumId")
+                    b.Property<int>("AlbumId")
                         .HasColumnType("int");
 
                     b.Property<string>("Duration")
@@ -189,7 +185,9 @@ namespace MusicWorld.Migrations
                 {
                     b.HasOne("MusicWorld.Models.Album", "Album")
                         .WithMany("Tracks")
-                        .HasForeignKey("AlbumId");
+                        .HasForeignKey("AlbumId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("MusicWorld.Models.Genre", "Genre")
                         .WithMany("Tracks")
