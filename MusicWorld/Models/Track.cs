@@ -8,7 +8,7 @@ namespace MusicWorld.Models
 {
     public class Track
     {
-        [ScaffoldColumn(false)]
+        
         public int TrackID { get; set; }
         [Required, StringLength(100), Display(Name = "TrackName")]
         public string TrackName { get; set; }
