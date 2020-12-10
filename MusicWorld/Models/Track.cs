@@ -19,8 +19,8 @@ namespace MusicWorld.Models
         public int? GenreID { get; set; }
         public Genre Genre { get; set; }
        
-        public int AlbumId { get; set; }
-        [ForeignKey("AlbumId")]
+        public int? AlbumId { get; set; }
+        
         public virtual Album Album { get; set; }   
         public virtual ICollection<ArtistTrack> ArtistTracks { get; set; }
 
