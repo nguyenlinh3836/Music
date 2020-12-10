@@ -8,8 +8,9 @@ namespace MusicWorld.Models
 {
     public class Album
     {
-        [Key]
+        [ScaffoldColumn(false)]
         public int AlbumId { get; set;}
+        [Required, StringLength(100), Display(Name = "Name")]
         public string AlbumName { get; set; }
         public string ImgAlbum { get; set; }
 

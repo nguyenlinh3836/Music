@@ -9,7 +9,9 @@ namespace MusicWorld.Models
 {
     public class ArtistAlbum
     {
-       public int ArtistId { get; set; }       
+        [Key, Column(Order = 0)]
+        public int ArtistId { get; set; }
+        [Key, Column(Order = 1)]
         public int AlbumId { get; set; }
         public Artist Artist { get; set; }
         public Album Album { get; set; }

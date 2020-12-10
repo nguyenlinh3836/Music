@@ -8,8 +8,9 @@ namespace MusicWorld.Models
 {
     public class Track
     {
-        [Key]
+        [ScaffoldColumn(false)]
         public int TrackID { get; set; }
+        [Required, StringLength(100), Display(Name = "TrackName")]
         public string TrackName { get; set; }
         public string TrackLink { get; set; }
         public string Duration { get; set; }
@@ -17,7 +18,7 @@ namespace MusicWorld.Models
         public int? GenreID { get; set; }
         public Genre Genre { get; set; }
         public int? AlbumID { get; set; }
-        public Album Album { get; set; }   
+        public virtual Album Album { get; set; }   
         public virtual ICollection<ArtistTrack> ArtistTracks { get; set; }
 
     }
