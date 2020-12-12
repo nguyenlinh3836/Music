@@ -2,157 +2,38 @@
     ViewData["Title"] = "Home Page";
 }
 
+
+@model IQueryable<Album>
 <div class="box-album-hot">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h2 class="bvh-h2-title text-center" style="margin-bottom: 70px;"><a href="#">ALBUM HOT<span></span></a></h2>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5ths ">
-                <a href="#">
-                    <div class="bvh-item-lnk d-block position-relative">
-                        <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1; margin-bottom: 10px;" src="img/project1.png">
-                        <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="img/project.jpg">
-                    </div>
-                </a>
-                <div class="bvh-item">
-                    <div class="bvh-item-info">
-                        <h6 class="bvh-item-h3 text-center"><a href="#">Wonder</a></h6>
-                        <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
-                    </div>
+        </div> 
+        @foreach(var p in Model)
+        {
+    <div>
+        <div class="col-md-5ths ">
+            <a href="#">
+                <div class="bvh-item-lnk d-block position-relative">
+                    <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1; margin-bottom: 10px;" src="~/img/131115648_1548897918629512_5083590689306388122_n.png">
+                    <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="@p.ImgAlbum">
                 </div>
-            </div>
-            <div class="col-md-5ths ">
-                <a href="#">
-                    <div class="bvh-item-lnk d-block position-relative">
-                        <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1;margin-top: 4px;" src="img/project1.png">
-                        <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="img/project.jpg">
-                    </div>
-                </a>
-                <div class="bvh-item">
-                    <div class="bvh-item-info">
-                        <h6 class="bvh-item-h3 text-center"><a href="#">Wonder</a></h6>
-                        <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5ths ">
-                <a href="#">
-                    <div class="bvh-item-lnk d-block position-relative">
-                        <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1;margin-top: 4px;" src="img/project1.png">
-                        <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="img/project.jpg">
-                    </div>
-                </a>
-                <div class="bvh-item">
-                    <div class="bvh-item-info">
-                        <h6 class="bvh-item-h3 text-center"><a href="#">Wonder</a></h6>
-                        <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5ths ">
-                <a href="#">
-                    <div class="bvh-item-lnk d-block position-relative">
-                        <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1;margin-top: 4px;" src="img/project1.png">
-                        <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="img/project.jpg">
-                    </div>
-                </a>
-                <div class="bvh-item">
-                    <div class="bvh-item-info">
-                        <h6 class="bvh-item-h3 text-center"><a href="#">Wonder</a></h6>
-                        <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5ths ">
-                <a href="#">
-                    <div class="bvh-item-lnk d-block position-relative">
-                        <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1;margin-top: 4px;" src="img/project1.png">
-                        <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="img/project.jpg">
-                    </div>
-                </a>
-                <div class="bvh-item">
-                    <div class="bvh-item-info">
-                        <h6 class="bvh-item-h3 text-center"><a href="#">Wonder</a></h6>
-                        <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5ths ">
-                <a href="#">
-                    <div class="bvh-item-lnk d-block position-relative">
-                        <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1;margin-top: 4px;" src="img/project1.png">
-                        <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="img/project.jpg">
-                    </div>
-                </a>
-                <div class="bvh-item">
-                    <div class="bvh-item-info">
-                        <h6 class="bvh-item-h3 text-center"><a href="#">Wonder</a></h6>
-                        <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5ths ">
-                <a href="#">
-                    <div class="bvh-item-lnk d-block position-relative">
-                        <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1;margin-top: 4px;" src="img/project1.png">
-                        <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="img/project.jpg">
-                    </div>
-                </a>
-                <div class="bvh-item">
-                    <div class="bvh-item-info">
-                        <h6 class="bvh-item-h3 text-center"><a href="#">Wonder</a></h6>
-                        <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5ths ">
-                <a href="#">
-                    <div class="bvh-item-lnk d-block position-relative">
-                        <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1;margin-top: 4px;" src="img/project1.png">
-                        <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="img/project.jpg">
-                    </div>
-                </a>
-                <div class="bvh-item">
-                    <div class="bvh-item-info">
-                        <h6 class="bvh-item-h3 text-center"><a href="#">Wonder</a></h6>
-                        <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5ths ">
-                <a href="#">
-                    <div class="bvh-item-lnk d-block position-relative">
-                        <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1;margin-top: 4px;" src="img/project1.png">
-                        <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="img/project.jpg">
-                    </div>
-                </a>
-                <div class="bvh-item">
-                    <div class="bvh-item-info">
-                        <h6 class="bvh-item-h3 text-center"><a href="#">Wonder</a></h6>
-                        <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-5ths ">
-                <a href="#">
-                    <div class="bvh-item-lnk d-block position-relative">
-                        <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1;margin-top: 4px;" src="img/project1.png">
-                        <img class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="img/project.jpg">
-                    </div>
-                </a>
-                <div class="bvh-item">
-                    <div class="bvh-item-info">
-                        <h6 class="bvh-item-h3 text-center"><a href="#">Wonder</a></h6>
-                        <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
-                    </div>
+            </a>
+            <div class="bvh-item">
+                <div class="bvh-item-info">
+                    <h6 class="bvh-item-h3 text-center"><a href="#">@p.AlbumName</a></h6>
+                    <p class="bvh-item-singer author_show text-center text-truncate">@p.ArtistAlbums</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
+        }
+    </div>      
+</div>      
+         
+             
 <div class="baihathot">
     <div class="container">
         <div class="row">

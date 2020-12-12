@@ -77,3 +77,4 @@ C:\Users\LEGION\source\repos\MusicWorld\MusicWorld\obj\Debug\netcoreapp3.1\stati
 C:\Users\LEGION\source\repos\MusicWorld\MusicWorld\obj\Debug\netcoreapp3.1\MusicWorld.dll
 C:\Users\LEGION\source\repos\MusicWorld\MusicWorld\obj\Debug\netcoreapp3.1\MusicWorld.pdb
 C:\Users\LEGION\source\repos\MusicWorld\MusicWorld\obj\Debug\netcoreapp3.1\MusicWorld.genruntimeconfig.cache
+C:\Users\LEGION\source\repos\MusicWorld\MusicWorld\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\NagivationMenu\Default.cshtml.g.cs
