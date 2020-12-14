@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\Music\\MusicWorld\\MusicWorld.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\Music\\MusicWorld\\MusicWorld.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\Music\\MusicWorld\\MusicWorld.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\Music\\MusicWorld\\MusicWorld.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Music\\MusicWorld\\MusicWorld.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\Music\\MusicWorld\\MusicWorld.csproj",
         "projectName": "MusicWorld",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Music\\MusicWorld\\MusicWorld.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\Music\\MusicWorld\\MusicWorld.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Music\\MusicWorld\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\Music\\MusicWorld\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -26,7 +26,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -73,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

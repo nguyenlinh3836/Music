@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+TUKsR53IlTOWNSeuo6ljHkewUainJlLXVKqLKZuqcp3xe85S4S2n0Vkn089OFF8XZTGoU+ZepQXwNj6qj46vw==",
+  "dgSpecHash": "x9jThbFBRoMs/eJqyGQNEJ0lyduA74xChTdooVKAW1RAC3q1o0CJ6JLdVRxrfjTvU/Ks7Wx3DHGOhzXqIMKR6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\Music\\MusicWorld\\MusicWorld.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\Music\\MusicWorld\\MusicWorld.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -161,12 +161,5 @@
     "C:\\Users\\Admin\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Admin\\Documents\\GitHub\\Music\\MusicWorld\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
