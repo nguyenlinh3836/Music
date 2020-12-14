@@ -21,6 +21,11 @@ namespace MusicWorld.Controllers
 
         public IActionResult Index() => View(repository.Albums);
 
+        public IActionResult List()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
