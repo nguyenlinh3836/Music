@@ -19,7 +19,7 @@ namespace MusicWorld.Controllers
             repository = repo;
         }
 
-        public IActionResult Index() => View(repository.Albums);
+        public IActionResult Index() => View(repository.Tracks);
 
         public IActionResult List()
         {
