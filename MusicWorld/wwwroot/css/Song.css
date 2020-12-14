@@ -1,0 +1,102 @@
+﻿.list-group {
+    background: #fcfcfc;
+    border-bottom: 1px solid #efefef;
+    float: left;
+    width: 100%;
+    height: 70px;
+}
+
+.row a {
+    color: black;
+}
+
+    .row a:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+.stt {
+    margin-top: 15px;
+}
+
+.list-group:hover {
+    background: #f3f3f3;
+}
+
+.stt span a {
+    color: black;
+}
+
+    .stt span a:hover {
+        color: #a59a9a;
+        text-decoration: none;
+    }
+
+.list-group.time {
+    font-size: 14px;
+    padding-left: 50px;
+}
+
+.icon a {
+    color: rgba(42,43,63,.6);
+    border-radius: 100%;
+}
+
+    .icon a i:hover {
+        color: rgba(42,43,63,.6);
+        border-radius: 100%;
+    }
+
+.row {
+    overflow: auto;
+    margin: 1.5em auto;
+}
+
+.colx h5 {
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.row .col img {
+    float: left;
+    margin-right: 1em;
+    width: 70px;
+    border-radius: 5px 5px;
+}
+
+.row .colx img {
+    border-radius: 50%;
+}
+
+.row .colx {
+    float: left;
+    margin-left: 30px;
+}
+
+.colx img {
+    transition: all 1s;
+    margin-top: 15px;
+}
+
+.colx:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.col img {
+    transition: all 1s;
+}
+
+.col:hover img {
+    -webkit-transform: scale(2);
+    transform: scale(1.2);
+}
+
+.row a {
+    color: #454545;
+}
+
+.p1 {
+    margin-top: 10px;
+    font-weight: unset;
+}

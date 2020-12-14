@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MusicWorld\\Models",
+    "\\MusicWorld\\Views",
+    "\\MusicWorld\\Views\\Home",
+    "\\MusicWorld\\Views\\Shared",
+    "\\MusicWorld\\Views\\Shared\\Components",
+    "\\MusicWorld\\Views\\Shared\\Components\\NagivationMenu",
+    "\\MusicWorld\\wwwroot",
+    "\\MusicWorld\\wwwroot\\css"
+  ],
+  "SelectedNode": "\\MusicWorld.sln",
+  "PreviewInSolutionExplorer": false
+}
