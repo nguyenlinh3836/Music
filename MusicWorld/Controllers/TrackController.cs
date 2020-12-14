@@ -5,12 +5,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MusicWorld.Models.ViewModels;
 using MusicWorld.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace MusicWorld.Controllers
 {
-    public class TrackController : Controller
+    public class TrackCOntroller : Controller
     {
-        private IMusicRepository repository;
+        
+   
+       
+       
+
+      
 
     
     }

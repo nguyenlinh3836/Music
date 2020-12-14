@@ -3,7 +3,7 @@
 }
 
 
-@model IQueryable<Track>
+@model IQueryable<ArtistAlbum>
 <div class="box-album-hot">
     <div class="container">
         <div class="row">
@@ -18,13 +18,13 @@
             <a href="#">
                 <div class="bvh-item-lnk d-block position-relative">
                     <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1; margin-bottom: 10px;" src="~/img/131115648_1548897918629512_5083590689306388122_n.png">
-                    <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="@p.UrlImg">
+                    <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="@p.Album.ImgAlbum">
                 </div>
             </a>
             <div class="bvh-item">
                 <div class="bvh-item-info">
-                    <h6 class="bvh-item-h3 text-center"><a href="#">@p.TrackName</a></h6>
-                    <p class="bvh-item-singer author_show text-center text-truncate">@p.ArtistTracks</p>
+                    <h6 class="bvh-item-h3 text-center"><a href="#">@p.Album.AlbumName</a></h6>
+                    <p class="bvh-item-singer author_show text-center text-truncate">@p.Artist.ArtistName</p>
                 </div>
             </div>
         </div>
@@ -32,6 +32,7 @@
         }
     </div>      
 </div>      
+
          
              
 <div class="baihathot">
