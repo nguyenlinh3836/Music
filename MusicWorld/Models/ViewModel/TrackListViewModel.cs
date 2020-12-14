@@ -6,7 +6,7 @@ using MusicWorld.Models;
 
 namespace MusicWorld.Models.ViewModels
 {
-    public class ArtistAlbumController
+    public class TrackListViewModel
     {
         public IEnumerable<Track> Tracks { get; set; }
         public PageInfo PageInfo { get; set; }
