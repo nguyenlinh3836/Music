@@ -16,8 +16,7 @@ namespace MusicWorld.Models
         public string TrackLink { get; set; }
         public string Duration { get; set; }
         public string UrlImg { get; set; }
-        public int? GenreId { get; set; }
-        public Genre Genre { get; set; }
+        public string Genre { get; set; }        
        
         public int? AlbumId { get; set; }
         

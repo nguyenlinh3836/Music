@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MusicWorld.Models;
+using MusicWorld.Models.ViewModels;
 
 namespace MusicWorld.Controllers
 {
@@ -19,7 +20,10 @@ namespace MusicWorld.Controllers
             repository = repo;
         }
 
-        public IActionResult Index() => View(repository.Tracks);
+
+     
+           
+   
 
         public IActionResult Privacy()
         {

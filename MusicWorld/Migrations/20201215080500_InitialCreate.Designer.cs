@@ -10,7 +10,7 @@ using MusicWorld.Models;
 namespace MusicWorld.Migrations
 {
     [DbContext(typeof(MusicDbContext))]
-    [Migration("20201210102806_InitialCreate")]
+    [Migration("20201215080500_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -92,21 +92,6 @@ namespace MusicWorld.Migrations
                     b.ToTable("ArtistTracks");
                 });
 
-            modelBuilder.Entity("MusicWorld.Models.Genre", b =>
-                {
-                    b.Property<int>("GenreId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("GenreName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("GenreId");
-
-                    b.ToTable("Genres");
-                });
-
             modelBuilder.Entity("MusicWorld.Models.Track", b =>
                 {
                     b.Property<int>("TrackId")
@@ -120,8 +105,8 @@ namespace MusicWorld.Migrations
                     b.Property<string>("Duration")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("GenreId")
-                        .HasColumnType("int");
+                    b.Property<string>("Genre")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TrackLink")
                         .HasColumnType("nvarchar(max)");
@@ -137,8 +122,6 @@ namespace MusicWorld.Migrations
                     b.HasKey("TrackId");
 
                     b.HasIndex("AlbumId");
-
-                    b.HasIndex("GenreId");
 
                     b.ToTable("Tracks");
                 });
@@ -187,13 +170,7 @@ namespace MusicWorld.Migrations
                         .WithMany("Tracks")
                         .HasForeignKey("AlbumId");
 
-                    b.HasOne("MusicWorld.Models.Genre", "Genre")
-                        .WithMany("Tracks")
-                        .HasForeignKey("GenreId");
-
                     b.Navigation("Album");
-
-                    b.Navigation("Genre");
                 });
 
             modelBuilder.Entity("MusicWorld.Models.Album", b =>
@@ -208,11 +185,6 @@ namespace MusicWorld.Migrations
                     b.Navigation("ArtistAlbums");
 
                     b.Navigation("ArtistTracks");
-                });
-
-            modelBuilder.Entity("MusicWorld.Models.Genre", b =>
-                {
-                    b.Navigation("Tracks");
                 });
 
             modelBuilder.Entity("MusicWorld.Models.Track", b =>
