@@ -21,12 +21,12 @@ namespace MusicWorld.Controllers
             return await _context.ArtistTracks.ToListAsync();
         }
 
-        public async Task<IActionResult> TrackList(int id)
+        public async Task<IActionResult> TrackList()
         {
             var tracks = await _context.ArtistTracks
                 .Include(ta => ta.Artist)
                 .Include(ta => ta.Track)
-                .FirstOrDefaultAsync();            
+                .ToListAsync();                  
             return View(tracks);
         }
 

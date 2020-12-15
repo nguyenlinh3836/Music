@@ -59,11 +59,11 @@ namespace MusicWorld
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Track}/{action=TrackList}/{id?}");
 
-                endpoints.MapControllerRoute(
-                 name: "gettrack",
-                 pattern: "{controller=Track}/{action=GetArtistTrack}/{id?}");
+                //endpoints.MapControllerRoute(
+                // name: "gettrack",
+                // pattern: "{controller=Track}/{action=GetArtistTrack}/{id?}");
 
 
             });
