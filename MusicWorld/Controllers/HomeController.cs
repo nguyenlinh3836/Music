@@ -39,10 +39,6 @@ namespace MusicWorld.Controllers
               },
               CurrentGenre = genre
           });
-
-
-
-
         public IActionResult Privacy()
         {
             return View();

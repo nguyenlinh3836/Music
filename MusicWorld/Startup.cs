@@ -62,12 +62,10 @@ namespace MusicWorld
                     "Page{productPage:int}",
                     new { Controller = "Home", action = "Index", productPage = 1 });
                 endpoints.MapControllerRoute("pagination",
-                    "Products/Page{productPage}",
+                    "Tracks/Page{productPage}",
                     new { Controller = "Home", action = "Index", productPage = 1 });
                 endpoints.MapDefaultControllerRoute();
                 endpoints.MapRazorPages();
-
-
             });
             SeedData.EnsurePopulated(app);
         }
