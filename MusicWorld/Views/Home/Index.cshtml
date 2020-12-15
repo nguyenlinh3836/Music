@@ -15,7 +15,7 @@
         {
     <div>
         <div class="col-md-5ths ">
-            <a href="#">
+            <a asp-area="" asp-controller="Home" asp-action="List">
                 <div class="bvh-item-lnk d-block position-relative">
                     <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1; margin-top:4px;" src="~/img/131115648_1548897918629512_5083590689306388122_n.png" width="165px">
                     <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="@p.UrlImg">
@@ -23,7 +23,7 @@
             </a>
             <div class="bvh-item">
                 <div class="bvh-item-info">
-                    <h6 class="bvh-item-h3 text-center"><a href="#">@p.TrackName</a></h6>
+                    <h6 class="bvh-item-h3 text-center"><a asp-area="" asp-controller="Home" asp-action="List">@p.TrackName</a></h6>
                     <p class="bvh-item-singer author_show text-center text-truncate">@p.ArtistTracks</p>
                 </div>
             </div>
