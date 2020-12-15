@@ -11,17 +11,15 @@ namespace MusicWorld.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private IMusicRepository repository;
+        public int PageSize = 4;
+        public HomeController(IMusicRepository repo)
         {
-            _logger = logger;
+            repository = repo;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        public IActionResult Index() => View(repository.Tracks);
 
         public IActionResult Privacy()
         {
