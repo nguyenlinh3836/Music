@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "u7B/rlic05qEa3bdhOQ9HcrV4KvkRIGqy9UEESA22J9L75VXsRJtpkzcZ8+c6Ws1ZZG590FUnOvhTryiY/tjCg==",
+  "dgSpecHash": "2fUkp/TlkYedrR9UTK6EBX2sphemgpQbTeptFlPSqEYIV1DDJshWt4iQb+lZwS+G/nj4z8fs1w08EbG9kmokPw==",
   "success": true,
   "projectFilePath": "C:\\Users\\LEGION\\source\\repos\\MusicWorld\\MusicWorld\\MusicWorld.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LEGION\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\LEGION\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\LEGION\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\LEGION\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\LEGION\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\LEGION\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
@@ -91,6 +93,7 @@
     "C:\\Users\\LEGION\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\LEGION\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\LEGION\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\LEGION\\.nuget\\packages\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512",
     "C:\\Users\\LEGION\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\LEGION\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\LEGION\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",

@@ -4,12 +4,13 @@ using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using MusicWorld.Models.ViewModels;
+using MusicWorld.Models;
 using System.Collections.Generic;
 
 
 namespace MusicWorld.Infrastructure
 {
-    // You may need to install the Microsoft.AspNetCore.Razor.Runtime package into your project
+   
     [HtmlTargetElement("div", Attributes = "page-model")]
     public class PageLinkTagHelper : TagHelper
     {

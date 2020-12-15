@@ -20,10 +20,28 @@ namespace MusicWorld.Controllers
             repository = repo;
         }
 
+        public ViewResult Index(string genre, int productPage = 1)
+          => View(new TrackListViewModel
+          {
+              Tracks = repository.Tracks
+              .Where(p => genre == null || p.Genre == genre)
+              .OrderBy(p => p.TrackId)
+              .Skip((productPage - 1) * PageSize)
+              .Take(PageSize),
+              PageInfo = new PageInfo
+              {
+                  CurrentPage = productPage,
+                  ItemsPerPage = PageSize,                   
+                   TotalItems = genre == null ?
+                   repository.Tracks.Count() :
+                   repository.Tracks.Where(
+                       e => e.Genre == genre).Count()
+              },
+              CurrentGenre = genre
+          });
 
-     
-           
-   
+
+
 
         public IActionResult Privacy()
         {

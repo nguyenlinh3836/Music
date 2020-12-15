@@ -1,138 +1,27 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@using MusicWorld.Models.ViewModels
+@model TrackListViewModel
 
-
-@model IQueryable<Track>
-<div class="box-album-hot">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="bvh-h2-title text-center" style="margin-bottom: 70px;"><a href="#">ALBUM HOT<span></span></a></h2>
-            </div>
-        </div> 
-        @foreach(var p in Model)
-        {
-    <div>
+@foreach (var p in Model.Tracks){
+    <div class="row">
         <div class="col-md-5ths ">
             <a href="#">
                 <div class="bvh-item-lnk d-block position-relative">
-                    <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1; margin-bottom: 10px;" src="~/img/131115648_1548897918629512_5083590689306388122_n.png">
+                    <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1; margin-bottom: 10px;" src="img/131115648_1548897918629512_5083590689306388122_n.png">
                     <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="@p.UrlImg">
                 </div>
             </a>
             <div class="bvh-item">
                 <div class="bvh-item-info">
                     <h6 class="bvh-item-h3 text-center"><a href="#">@p.TrackName</a></h6>
-                    <p class="bvh-item-singer author_show text-center text-truncate">@p.ArtistTracks</p>
+                    <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
                 </div>
             </div>
         </div>
     </div>
         }
-    </div>      
-</div>      
-         
-             
-<div class="baihathot">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="bvh-h2-title text-center" style="margin-bottom: 70px;"><a href="#">BÀI HÁT HOT<span></span></a></h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 ">
-                <div class="col" style="border-width:1px;border-bottom-style:ridge;">
-                    <a href="#"> <img src="img/project.jpg" /></a>
-                    <a href="#"><p class="p1">Shawn Mendes</p></a>
-                    <p class="bvh-item-singer ">Lorem ipsum dolor</p>
-                </div>
-                <div class="col" style="border-width:1px; border-bottom-style:ridge;">
-                    <a href="#"> <img src="img/project.jpg" /></a>
-                    <a href="#"><p class="p1">Shawn Mendes</p></a>
-                    <p class="bvh-item-singer ">Lorem ipsum dolor</p>
-                </div>
-                <div class="col" style="border-width:1px; border-bottom-style:ridge;">
-                    <a href="#"> <img src="img/project.jpg" /></a>
-                    <a href="#"><p class="p1">Shawn Mendes</p></a>
-                    <p class="bvh-item-singer ">Lorem ipsum dolor</p>
-                </div>
-                <div class="col" style="border-width:1px; border-bottom-style:ridge;">
-                    <a href="#"> <img src="img/project.jpg" /></a>
-                    <a href="#"><p class="p1">Shawn Mendes</p></a>
-                    <p class="bvh-item-singer ">Lorem ipsum dolor</p>
-                </div>
-                <div class="col" style="border-width:1px; border-bottom-style:ridge;">
-                    <a href="#"> <img src="img/project.jpg" /></a>
-                    <a href="#"><p class="p1">Shawn Mendes</p></a>
-                    <p class="bvh-item-singer ">Lorem ipsum dolor</p>
-                </div>
-            </div>
-            <div class="col-md-6 ">
-                <div class="col" style="border-width:1px;border-bottom-style:ridge;">
-                    <a href="#"> <img src="img/project.jpg" /></a>
-                    <a href="#"><p class="p1">Shawn Mendes</p></a>
-                    <p class="bvh-item-singer ">Lorem ipsum dolor</p>
-                </div>
-                <div class="col" style="border-width:1px;border-bottom-style:ridge;">
-                    <a href="#"> <img src="img/project.jpg" /></a>
-                    <a href="#"><p class="p1">Shawn Mendes</p></a>
-                    <p class="bvh-item-singer ">Lorem ipsum dolor</p>
-                </div>
-                <div class="col" style="border-width:1px; border-bottom-style:ridge;">
-                    <a href="#"> <img src="img/project.jpg" /></a>
-                    <a href="#"><p class="p1">Shawn Mendes</p></a>
-                    <p class="bvh-item-singer ">Lorem ipsum dolor</p>
-                </div>
-                <div class="col" style="border-width:1px; border-bottom-style:ridge;">
-                    <a href="#"> <img src="img/project.jpg" /></a>
-                    <a href="#"><p class="p1">Shawn Mendes</p></a>
-                    <p class="bvh-item-singer ">Lorem ipsum dolor</p>
-
-                </div>
-                <div class="col" style="border-width:1px; border-bottom-style:ridge;">
-                    <a href="#"> <img src="img/project.jpg" /></a>
-                    <a href="#"><p class="p1">Shawn Mendes</p></a>
-                    <p class="bvh-item-singer ">Lorem ipsum dolor</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="casihot">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="bvh-h2-title text-center" style="margin: 50px 0 70px 0;"><a href="#"><span>CA SĨ HOT</span></a></h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="colx ">
-                <a href="#"> <img src="img/project.jpg" width="150px;" /></a>
-                <a href="#"><h5>Shawn Mendes</h5></a>
-            </div>
-            <div class="colx ">
-                <a href="#"> <img src="img/project.jpg" width="150px;" /></a>
-                <a href="#"><h5>Shawn Mendes</h5></a>
-            </div>
-            <div class="colx ">
-                <a href="#"> <img src="img/project.jpg" width="150px;" /></a>
-                <a href="#"><h5>Shawn Mendes</h5></a>
-            </div>
-            <div class="colx ">
-                <a href="#"> <img src="img/project.jpg" width="150px;" /></a>
-                <a href="#"><h5>Shawn Mendes</h5></a>
-            </div>
-            <div class="colx ">
-                <a href="#"> <img src="img/project.jpg" width="150px;" /></a>
-                <a href="#"><h5>Shawn Mendes</h5></a>
-            </div>
-            <div class="colx ">
-                <a href="#"> <img src="img/project.jpg" width="150px;" /></a>
-                <a href="#"><h5>Shawn Mendes</h5></a>
-            </div>
-
-        </div>
-    </div>
+<div page-model="@Model.PageInfo" page-action="Index" page-classes-enabled="true"
+     page-class="btn" page-class-normal="btn-outline-dark"
+     page-class-selected="btn-primary"
+     page-url-category="@Model.CurrentGenre"
+     class="btn-group pull-right m-1">
 </div>

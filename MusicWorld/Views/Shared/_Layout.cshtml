@@ -36,11 +36,17 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="row m-1 p-1">
+        <div class="col-3" id="genres">
+            <vc:navigation-menu />
+        </div>
+        <div class="col-9">
             @RenderBody()
-        </main>
+        </div>
+
     </div>
+   
+   
 
     <footer class="border-top footer text-muted">
         <div class="container">

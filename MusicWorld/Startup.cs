@@ -31,6 +31,7 @@ namespace MusicWorld
                      Configuration["ConnectionStrings:MusicWorldConnection"]);
             });
             services.AddScoped<IMusicRepository,EFMusicRepository>();
+            services.AddRazorPages();
 
 
         }
@@ -56,15 +57,15 @@ namespace MusicWorld
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-                endpoints.MapControllerRoute(
-                 name: "gettrack",
-                 pattern: "{controller=Track}/{action=GetArtistTrack}/{id?}");
-
+            {                             
+                endpoints.MapControllerRoute("page",
+                    "Page{productPage:int}",
+                    new { Controller = "Home", action = "Index", productPage = 1 });
+                endpoints.MapControllerRoute("pagination",
+                    "Products/Page{productPage}",
+                    new { Controller = "Home", action = "Index", productPage = 1 });
+                endpoints.MapDefaultControllerRoute();
+                endpoints.MapRazorPages();
 
             });
             SeedData.EnsurePopulated(app);
