@@ -1,0 +1,41 @@
+﻿body a:hover {
+    color: #7ab014 !important;
+    text-decoration: none;
+    cursor: pointer !important;
+}
+
+.row a {
+    color: #454545;
+}
+
+.wrapper {
+    margin-top: 15px;
+    background-color: #f7f7f7;
+    width: 190px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.img-container {
+    border-radius: 100%;
+    height: auto; /** Chiều cao tự động **/
+    margin: 30px 35px 30px 35px; /** Cách trên dưới 10px và nằm giữa **/
+    overflow: hidden; /** DÒNG BẮT BUỘC CÓ **/
+    position: relative;
+    width: 120px;
+}
+
+    .img-container img {
+        width: 100%; /** Hình ảnh rộng 100% so với vùng chứa **/
+        transition: all 1s; /** Tạo độ mượt **/
+    }
+
+    .img-container:hover img {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+.bvh-item-info p {
+    color: #9e9e9e !important;
+    font-size: 12px;
+}
