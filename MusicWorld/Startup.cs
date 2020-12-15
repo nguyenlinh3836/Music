@@ -57,11 +57,7 @@ namespace MusicWorld
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
-            {
-               
-                endpoints.MapControllerRoute("catpage",
-                      "{category}/Page{productPage:int}",
-                      new { Controller = "Home", action = "Index", productPage = 1 });
+            {                             
                 endpoints.MapControllerRoute("page",
                     "Page{productPage:int}",
                     new { Controller = "Home", action = "Index", productPage = 1 });

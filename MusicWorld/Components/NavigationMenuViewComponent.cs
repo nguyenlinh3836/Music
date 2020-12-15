@@ -5,8 +5,7 @@ using MusicWorld.Models;
 namespace MusicWorld.Components
 {
     public class NavigationMenuViewComponent : ViewComponent
-    {
-       
+    {     
 
         private IMusicRepository repository;
         public NavigationMenuViewComponent(IMusicRepository repo)
