@@ -14,7 +14,7 @@ namespace MusicWorld.Controllers
     {
 
         private IMusicRepository repository;
-        public int PageSize = 4;
+        public int PageSize = 10;
         public HomeController(IMusicRepository repo)
         {
             repository = repo;
