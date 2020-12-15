@@ -36,16 +36,27 @@ namespace MusicWorld.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Genres",
+                name: "Tracks",
                 columns: table => new
                 {
-                    GenreId = table.Column<int>(type: "int", nullable: false)
+                    TrackId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    GenreName = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    TrackName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    TrackLink = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Duration = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UrlImg = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Genre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AlbumId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Genres", x => x.GenreId);
+                    table.PrimaryKey("PK_Tracks", x => x.TrackId);
+                    table.ForeignKey(
+                        name: "FK_Tracks_Albums_AlbumId",
+                        column: x => x.AlbumId,
+                        principalTable: "Albums",
+                        principalColumn: "AlbumId",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -70,36 +81,6 @@ namespace MusicWorld.Migrations
                         principalTable: "Artists",
                         principalColumn: "ArtistId",
                         onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Tracks",
-                columns: table => new
-                {
-                    TrackId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    TrackName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    TrackLink = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Duration = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UrlImg = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    GenreId = table.Column<int>(type: "int", nullable: true),
-                    AlbumId = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Tracks", x => x.TrackId);
-                    table.ForeignKey(
-                        name: "FK_Tracks_Albums_AlbumId",
-                        column: x => x.AlbumId,
-                        principalTable: "Albums",
-                        principalColumn: "AlbumId",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Tracks_Genres_GenreId",
-                        column: x => x.GenreId,
-                        principalTable: "Genres",
-                        principalColumn: "GenreId",
-                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -140,11 +121,6 @@ namespace MusicWorld.Migrations
                 name: "IX_Tracks_AlbumId",
                 table: "Tracks",
                 column: "AlbumId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Tracks_GenreId",
-                table: "Tracks",
-                column: "GenreId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -163,9 +139,6 @@ namespace MusicWorld.Migrations
 
             migrationBuilder.DropTable(
                 name: "Albums");
-
-            migrationBuilder.DropTable(
-                name: "Genres");
         }
     }
 }
