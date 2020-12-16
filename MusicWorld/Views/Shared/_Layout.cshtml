@@ -6,7 +6,7 @@
     <title>@ViewData["Title"] - MusicWorld</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    <link rel="stylesheet" href="~/css/index2.css" />
+    <link rel="stylesheet" href="/css/index2.css" />
 
 </head>
 <body>
@@ -36,14 +36,11 @@
             </div>
         </nav>
     </header>
-    <div class="row m-1 p-1">
-        <div class="col-3" id="genres">
-            <vc:navigation-menu/>
-        </div>
-        <div class="col-9">
+    <main>       
+        <div class="container">
             @RenderBody()
         </div>
-    </div>
+    </main>
    
 
     <footer class="border-top footer text-muted">
