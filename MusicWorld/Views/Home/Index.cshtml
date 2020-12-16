@@ -2,7 +2,7 @@
 @model TrackListViewModel
 
 @foreach (var p in Model.Tracks){
-    <div class="row">
+    <div>
         <div class="col-md-5ths ">
             <a href="#">
                 <div class="bvh-item-lnk d-block position-relative">
@@ -17,7 +17,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>    
         }
 <div page-model="@Model.PageInfo" page-action="Index" page-classes-enabled="true"
      page-class="btn" page-class-normal="btn-outline-dark"
