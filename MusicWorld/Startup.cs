@@ -30,6 +30,9 @@ namespace MusicWorld
                 opts.UseSqlServer(
                      Configuration["ConnectionStrings:MusicWorldConnection"]);
             });
+            services.AddScoped<IMusicRepository,EFMusicRepository>();
+            services.AddRazorPages();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,11 +56,18 @@ namespace MusicWorld
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            {               
+                endpoints.MapControllerRoute("page", "Page{productPage:int}",
+                    new { Controller = "Home", action = "Index", productPage = 1 });
+                endpoints.MapControllerRoute("pagination", "Products/Page{productPage}",
+                    new { Controller = "Home", action = "Index", productPage = 1 });
+
+                endpoints.MapDefaultControllerRoute();
+                endpoints.MapRazorPages();
+
+
             });
+            SeedData.EnsurePopulated(app);
         }
     }
 }

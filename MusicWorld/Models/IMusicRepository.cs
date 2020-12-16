@@ -7,9 +7,9 @@ namespace MusicWorld.Models
 {
     public interface IMusicRepository
     {
-        IQueryable<Track> Tracks { get; }
-        IQueryable<Genre> Genres{ get; }
+        IQueryable<Track> Tracks { get; }        
         IQueryable<Album> Albums{ get; }
         IQueryable<Artist> Artists { get; }
+        
     }
 }

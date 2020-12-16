@@ -1,0 +1,313 @@
+body{
+	background: #fcfcfc;
+	margin: 200px 0px 500px 0px;
+}
+.container{
+	margin-top: 30px;
+	text-align: center; 
+	display: block; 
+    margin-left: auto;
+     margin-right: auto;
+     width: 90%;
+     box-sizing: border-box;
+}
+.img-background{
+	text-align: center;;
+	background: url(https://photo-zmp3.zadn.vn/cover_artist/8/6/f/1/86f124c833b3549c9af60787a09d7c9c.jpg) center center / cover no-repeat;
+    height: 220px;
+    display: block; 
+    margin-left: auto;
+     margin-right: auto;
+     width: 90%;
+}
+section{
+
+}
+.name{
+	width: 200px;
+}
+.avt>img{
+	width: 50px;
+	height: 50px;float: left;
+	border-radius: 100%;
+	float: left;
+	margin-left: -10px;
+}
+.name>a{
+	color: black;
+	margin-left: 10px;
+	float: left;
+	font-style: 25px;
+	font-weight: 650;
+	opacity: 0.8;
+	text-decoration: none;
+}
+.name>a:hover{
+	color: #391e5a;	
+}
+.name>p{
+	float: left;
+	margin-left: 10px;
+    font-size: 15px;
+	color: #a0a0a0;
+}
+a>.folow{
+	border-radius: 5px;
+	float: right;
+	width: 120px;
+	height: 35px;
+	border: 1px solid #dbdbdb;
+	margin: -24px -13px 0px 0px;
+	text-align: center;
+	font-size: 13px;
+	color: #65509e;
+	background: #f7f7f7;
+}
+a>.folow>i{
+	margin-top: 10px;
+}
+a>.folow:hover{
+	background: white;
+box-shadow: 0px 0px 5px 5px #ccd1ca;
+}
+.list>ul>a>li{
+	float: left;
+	text-align: center;
+	list-style: none;
+	color: black;
+	font-weight: 600;
+	padding: 0px 30px 30px 30px;
+/*	margin-right: 50px;
+*/	
+	}
+	.list>ul{
+		margin:50px 0px 0px -50px;
+	}
+.list>ul>a>li:hover{
+	border-bottom: 2px solid #65509e;
+	color: #65509e; 
+}
+/*.img-song>img{
+	float: left;
+	position: absolute;
+	z-index: 1;
+	height: 200px;
+	width: 300px;
+}*/
+a>.img-song{ 
+	border-radius: 5px;
+	opacity: 0.5;
+	height: auto; /** Chiều cao tự động **/ 
+	margin: 10px auto; /** Cách trên dưới 10px và nằm giữa **/ 
+	overflow: hidden; /** DÒNG BẮT BUỘC CÓ **/ 
+	position: absolute; 
+	width: 400px;
+	margin-left: -10px;
+	height: 200px; /** Chiều rộng vùng chứa **/ 
+		} 
+	
+a>.img-song>img { 
+	width: 100%; /** Hình ảnh rộng 100% so với vùng chứa **/ 
+	height: 200px;
+	transition: all 1s; /** Tạo độ mượt **/ 
+	position: absolute;
+	z-index: 1;
+	margin-left: -200px;
+} 
+
+a>.img-song:hover>img { 
+	-webkit-transform: scale(1.2); transform: scale(1.2); 
+}
+a>.song{
+	float: left;
+	position: relative;
+	z-index: 2;
+}
+a>.song>img{
+	float: left;
+margin-top: 130px;
+}
+a>.song>.name{
+	color: white;
+	font-weight: 600;
+	float: left;
+	    margin: 140px 0px 0px -20px;
+}
+a>.song>.cs{
+	margin-right: 85px;
+	font-weight: 600;
+	color: #865b3b;
+
+}
+.info span{
+	margin:30px 0px 0px -230px;
+	position: absolute;
+	font-size: 15px;
+	z-index: 1;
+}
+.container>.album{
+font-size: 24px;
+margin: -50px 0px 0px 166px;
+font-weight: 700;
+color: #32323d;
+float: left;
+}
+.container>a>.play{
+	border-radius: 5px;
+margin-top: -50px;
+background: #65509e;
+color: #fcfcfc;
+width: 140px;
+height: 35px;
+float: right;
+font-size: 12px;
+}
+.play>i{
+	margin-top: 12px;
+}
+.container>a>.play:hover{
+	color: #65509e;
+	background: white;
+box-shadow: 0px 0px 5px 5px #ccd1ca;
+}
+
+
+
+.list-group>ul>li{
+	border-bottom: 1px solid #efefef;
+	background: #fcfcfc;
+	height: 60px;
+
+}
+.list-group>ul>li:hover{
+	border-bottom: 1px solid #efefef;
+	background: #f3f3f3;
+}
+.list-group>ul{
+    margin-left: 124px;
+    width: 88%;
+}
+.stt{
+	    margin-top: 5px;
+}
+.stt>span{
+	margin: 0px 15px;
+}
+.time{
+	font-size: 14px;
+}
+a>.icon{
+	color: black;
+	margin: -35px 20px 0px 0px;
+	width: 30px;
+	height: 30px;
+/*	border: 1px solid #fcfcfc;
+*/	border-radius: 100%;
+
+}
+a>.icon:hover{
+	width: 30px;
+	height: 30px;
+	border: 1px solid #a59a9a;
+	background: #a59a9a;
+	border-radius: 100%;
+}
+
+
+
+
+
+
+
+.wrapper{
+    margin-top: 15px;
+/*    background-color: #f7f7f7;*/
+     width: 190px;
+    margin-left: 30px;
+    text-align: center;
+}
+.img-container {
+    border-radius: 5px;
+    height: auto; /** Chiều cao tự động **/
+ /** Cách trên dưới 10px và nằm giữa **/
+    overflow: hidden; /** DÒNG BẮT BUỘC CÓ **/
+/*    position: relative;*/
+    width: 190px;
+}
+.img-container a>img {
+    width: 100%; /** Hình ảnh rộng 100% so với vùng chứa **/
+    transition: all 1s; /** Tạo độ mượt **/ 
+    z-index: 1;
+}
+
+.img-container:hover img {
+    -webkit-transform: scale(1.2); transform: scale(1.2);
+}
+h6.bvh-item-h3.text-center>a{
+	color: black;	
+}
+h6.bvh-item-h3.text-center{
+		margin-top: 10px;
+
+}
+h6.bvh-item-h3.text-center>a:hover{
+	text-decoration: none;
+	list-style: none;
+	color: #65509e;
+}
+.img-container>a>i{
+	position: absolute;
+	    color: white;
+	    font-size: 40px;
+    line-height: 180px;
+    margin-left: 70px;
+}
+
+
+
+
+
+.wrapper2{
+    margin-top: 15px;
+    background-color: #f7f7f7;
+     width: 190px;
+    margin-left: 30px;
+    text-align: center;
+}
+.img-container2 {
+    border-radius: 100%;
+    height: auto; /** Chiều cao tự động **/
+ /** Cách trên dưới 10px và nằm giữa **/
+    overflow: hidden; /** DÒNG BẮT BUỘC CÓ **/
+/*    position: relative;*/
+    width: 190px;
+}
+.img-container2 a>img {
+    width: 100%; /** Hình ảnh rộng 100% so với vùng chứa **/
+    transition: all 1s; /** Tạo độ mượt **/ 
+    z-index: 1;
+}
+
+.img-container2:hover img {
+    -webkit-transform: scale(1.2); transform: scale(1.2);
+}
+h6.bvh-item-h3.text-center>a{
+	color: black;	
+}
+h6.bvh-item-h3.text-center{
+		margin-top: 10px;
+}
+h6.bvh-item-h3.text-center>a:hover{
+	text-decoration: none;
+	list-style: none;
+	color: #65509e;
+}
+.img-container2>a>i{
+	position: absolute;
+	    color: white;
+	    font-size: 40px;
+    line-height: 180px;
+    margin-left: 70px;
+}
+
+

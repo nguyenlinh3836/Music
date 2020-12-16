@@ -1,14 +1,18 @@
-﻿body {
+﻿﻿body {
     background: #fcfcfc;
 }
-
+body a:hover {
+    color: #7ab014 !important;
+    text-decoration: none;
+    cursor: pointer !important;
+}
 .container {
     margin-top: 30px;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-/*    width: 90%;*/
+    /*    width: 90%;*/
     box-sizing: border-box;
 }
 
@@ -20,7 +24,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-/*    width: 90%;*/
+    /*    width: 90%;*/
 }
 
 section {
@@ -207,7 +211,7 @@ a > .song {
     }
 
 .list-group > ul {
-/*    margin-left: 124px;*/
+    /*    margin-left: 124px;*/
     width: 88%;
 }
 
@@ -295,11 +299,6 @@ h6.bvh-item-h3.text-center {
     line-height: 180px;
     margin-left: 70px;
 }
-
-
-
-
-
 .wrapper2 {
     margin-top: 15px;
     background-color: #f7f7f7;
