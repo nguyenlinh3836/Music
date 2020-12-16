@@ -1,28 +1,27 @@
 ﻿@using MusicWorld.Models.ViewModels
 @model TrackListViewModel
-<div class="col-3 float-left">
-    <vc:navigation-menu/>
+<div class="col-3 list-group" id="list-tab" role="tablist">
+    <vc:navigation-menu />
 </div>
 <div class="col-9">
     @foreach (var p in Model.Tracks)
     {
-        <div>
-            <div class="col-md-5ths ">
-                <a href="#">
-                    <div class="bvh-item-lnk d-block position-relative">
-                        <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1; margin-bottom: 10px;" src="img/131115648_1548897918629512_5083590689306388122_n.png">
-                        <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="@p.UrlImg">
-                    </div>
-                </a>
-                <div class="bvh-item">
-                    <div class="bvh-item-info">
-                        <h6 class="bvh-item-h3 text-center"><a href="#">@p.TrackName</a></h6>
-                        <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
-                    </div>
+    <div>
+        <div class="col-md-5ths">
+            <a href="#">
+                <div class="bvh-item-lnk d-block position-relative">
+                    <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1; margin-bottom: 10px;" src="img/131115648_1548897918629512_5083590689306388122_n.png">
+                    <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="@p.UrlImg">
+                </div>
+            </a>
+            <div class="bvh-item">
+                <div class="bvh-item-info">
+                    <h6 class="bvh-item-h3 text-center"><a href="#">@p.TrackName</a></h6>
+                    <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
                 </div>
             </div>
         </div>
-    }
+    </div>}
     <div page-model="@Model.PageInfo" page-action="Index" page-classes-enabled="true"
          page-class="btn" page-class-normal="btn-outline-dark"
          page-class-selected="btn-primary"

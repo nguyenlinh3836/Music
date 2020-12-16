@@ -7,7 +7,7 @@
 
 @foreach (string Genre in Model)
 {
-    <a class="btn btn-block @(Genre == ViewBag.SelectedCategory
+    <a class="list-group-item list-group-item-action @(Genre == ViewBag.SelectedCategory
     ? "btn-primary" : "btn-outline-secondary")"
        asp-action="Index" asp-controller="Home"
        asp-route-category="@Genre"
