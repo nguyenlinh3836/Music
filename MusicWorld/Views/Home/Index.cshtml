@@ -42,7 +42,7 @@
                         @foreach (var p in Model.Tracks)
                         {
                             <div class="col-md-3">
-                                <a href="#">
+                                <a href="DetailTrack/TrackId=@p.TrackId">
                                     <div class="bvh-item-lnk d-block position-relative">
                                         <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1; margin-top:4px;" src="img/project1.png">
                                         <img effect="opacity" class="bvh-item-img animated fadeInDown2" style="position: relative;z-index: 2" src="@p.UrlImg">
@@ -50,7 +50,7 @@
                                 </a>
                                 <div class="bvh-item">
                                     <div class="bvh-item-info">
-                                        <h6 class="bvh-item-h3 text-center"><a href="#">@p.TrackName</a></h6>
+                                        <h6 class="bvh-item-h3 text-center"><a href="DetailTrack/TrackId=@p.TrackId">@p.TrackName</a></h6>
                                         <p class="bvh-item-singer author_show text-center text-truncate">@p.ArtistName</p>
                                     </div>
                                 </div>
