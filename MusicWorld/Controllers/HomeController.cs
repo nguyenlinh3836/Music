@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MusicWorld.Models;
 using MusicWorld.Models.ViewModels;
+
 namespace MusicWorld.Controllers
 {
     public class HomeController : Controller
@@ -38,6 +39,17 @@ namespace MusicWorld.Controllers
               },
               CurrentGenre = genre
           });
+        public ViewResult DetailTrack(int TrackId)
+            => View(new TrackListViewModel { 
+                  Tracks = repository.Tracks
+                .Where(p => p.TrackId == TrackId)        
+                        
+            });
+        
+
+
+
+
         public IActionResult Privacy()
         {
             return View();
