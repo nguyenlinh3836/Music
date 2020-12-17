@@ -7,14 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MusicWorld.Models;
 using MusicWorld.Models.ViewModels;
-
 namespace MusicWorld.Controllers
 {
     public class HomeController : Controller
     {
 
         private IMusicRepository repository;
-        public int PageSize = 10;
+        public int PageSize = 8;
         public HomeController(IMusicRepository repo)
         {
             repository = repo;

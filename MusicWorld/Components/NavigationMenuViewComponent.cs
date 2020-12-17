@@ -14,7 +14,7 @@ namespace MusicWorld.Components
         }
         public IViewComponentResult Invoke()
         {
-            ViewBag.SelectedCategory = RouteData?.Values["genre"];
+            ViewBag.SelectedCategory = RouteData?.Values["Genre"];
             return View(repository.Tracks
                 .Select(x => x.Genre)
                 .Distinct()

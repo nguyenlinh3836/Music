@@ -37,11 +37,11 @@
                 </div>
             </div>
             <div class="col-9">
-                <div class="row">
-                    <div class="album" style="margin-left:26px;">
+                <div class="col-12">
+                    <div class="album row">
                         @foreach (var p in Model.Tracks)
                         {
-                            <div class="col-md-5ths ">
+                            <div class="col-md-3">
                                 <a href="#">
                                     <div class="bvh-item-lnk d-block position-relative">
                                         <img class="bvh-item-bg animated fadeInDown" style="position: absolute;z-index: 1; margin-top:4px;" src="img/project1.png">
@@ -51,21 +51,21 @@
                                 <div class="bvh-item">
                                     <div class="bvh-item-info">
                                         <h6 class="bvh-item-h3 text-center"><a href="#">@p.TrackName</a></h6>
-                                        <p class="bvh-item-singer author_show text-center text-truncate">Shawn Mendes</p>
+                                        <p class="bvh-item-singer author_show text-center text-truncate">@p.ArtistName</p>
                                     </div>
                                 </div>
                             </div>
                         }
                     </div>
+                </div>
+                <div class="row">
                     <div page-model="@Model.PageInfo" page-action="Index" page-classes-enabled="true"
                          page-class="btn" page-class-normal="btn-light"
                          page-class-selected="btn-primary"
                          page-url-category="@Model.CurrentGenre"
-                         class="btn-group justify-content-center m-auto">
-
+                         class="btn-group justify-content-center m-auto row">
                     </div>
-                </div>            
-
+                </div>               
             </div>
         </div>
 

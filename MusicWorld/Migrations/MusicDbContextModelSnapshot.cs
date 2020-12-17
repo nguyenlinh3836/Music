@@ -100,6 +100,9 @@ namespace MusicWorld.Migrations
                     b.Property<int?>("AlbumId")
                         .HasColumnType("int");
 
+                    b.Property<string>("ArtistName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Duration")
                         .HasColumnType("nvarchar(max)");
 

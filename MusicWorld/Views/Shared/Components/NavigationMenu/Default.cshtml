@@ -1,16 +1,16 @@
 ﻿@model IEnumerable<string>
 
 <a class=" btn btn-block btn-outline-secondary"
-   asp-action="Index" asp-controller="Home" asp-route-genre="">
+   asp-action="Index" asp-controller="Home" asp-route-category="">
     Home
 </a>
 
 @foreach (string Genre in Model)
 {
-    <a class="list-group-item list-group-item-action @(Genre == ViewBag.SelectedCategory
+    <a class="list-group-item list-group-item-action @(Genre == ViewBag.SelectedGenre
     ? "btn-primary" : "btn-outline-secondary")"
        asp-action="Index" asp-controller="Home"
-       asp-route-category="@Genre"
+       asp-route-genre="@Genre"
        asp-route-productPage="1">
         @Genre
     </a>
