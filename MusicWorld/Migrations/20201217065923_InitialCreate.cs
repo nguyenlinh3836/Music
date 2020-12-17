@@ -46,6 +46,7 @@ namespace MusicWorld.Migrations
                     Duration = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UrlImg = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Genre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ArtistName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     AlbumId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>

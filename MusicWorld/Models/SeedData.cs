@@ -95,13 +95,13 @@ namespace MusicWorld.Models
 				context.Tracks.AddRange(
 					new Track
 					{
-
 						TrackName = "Đừng yêu nữa, em mệt rồi",
 						Duration = "04:41",
 						TrackLink = "https://zingmp3.vn/embed/song/ZWADIOCC?",
 						UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/7/d/9/27d9bf0671538484ddc719c125cba369.jpg",
 						AlbumId = 2,
-						Genre = "Pop"
+						Genre = "Pop",
+						ArtistName="Min"
 					},
 		new Track
 		{
@@ -111,7 +111,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW7FODC9?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/f/3/f3ccdd27d2000e3f9255a7e3e2c48800_1493277779.jpg",
 			AlbumId = 2,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Min"
 		},
 		new Track
 		{
@@ -121,7 +122,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW7FC0I7?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/d/0/d05f9b3c87cf7ccda468174b28757489_1495770525.jpg",
 			AlbumId = 2,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Min"
 		},
 		new Track
 		{
@@ -131,7 +133,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZWB0IFW8?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/3/a/c/03ac82cbf720ea5d24129dc5a2bb5bbe.jpg",
 			AlbumId = 2,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Min"
 		},
 		new Track
 		{
@@ -141,7 +144,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW9ABW0E?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/e/4/e4dabc639b203d00bbefe9d488353716_1516266450.jpg",
 			AlbumId = 2,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Min"
 		},
 		new Track
 		{
@@ -151,7 +155,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZOI6BFA9?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/a/4/b/fa4b429fda0c4d3d2100f64ad3c7a616.jpg",
 			AlbumId = 1,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Hiền Hồ"
 		},
 		new Track
 		{
@@ -161,7 +166,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZWAF8DOB?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/3/f/5/8/3f588b3f74b49a8b2c70bc771df103bd.jpg",
 			AlbumId = 1,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Hiền Hồ"
 		},
 		new Track
 		{
@@ -171,7 +177,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW9C0DWE?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/b/b/5/0bb55eaf1f19451a075759258eab718d.jpg",
 			AlbumId = 1,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Hiền Hồ"
 		},
 		new Track
 		{
@@ -181,7 +188,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW8WUICD?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/4/f/4f33a5712c26714f0a1e7177d0b4129d_1509608464.jpg",
 			AlbumId = 1,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Hiền Hồ"
 		},
 		new Track
 		{
@@ -191,7 +199,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW9EO8WO?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/1/2/b/8/12b88922410ad579dce22031b12c05ca.jpg",
 			AlbumId = 1,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Hiền Hồ"
 		},
 		new Track
 		{
@@ -201,7 +210,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW6W8W9E?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/8/6/8655400b95bb6416d07e8221567fa10f_1349062992.jpg",
 			AlbumId = 3,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Mr.Siro"
 		},
 		new Track
 		{
@@ -211,7 +221,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW6DF66B?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/7/1/71e884a8168fa5a3a8c596dca8d30193_1473737667.jpg",
 			AlbumId = 3,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Mr.Siro"
 		},
 		new Track
 		{
@@ -221,7 +232,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW68WEZ0?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/9/0/90c61a8453cba8a9f8c2ca0c137fbade_1444583321.jpg",
 			AlbumId = 3,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Mr.Siro"
 		},
 		new Track
 		{
@@ -231,7 +243,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZWABWOFZ?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/d/6/2/4d62b014dddf2702af85e1d14d5c0a0b.jpg",
 			AlbumId = 3,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Mr.Siro"
 		},
 		new Track
 		{
@@ -241,7 +254,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZWB068E0?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/e/a/a/7/eaa7be597e6a5476336affd96ca5eab3.jpg",
 			AlbumId = 3,
-			Genre = "Pop"
+			Genre = "Pop",
+			ArtistName = "Mr.Siro"
 		},
 		new Track
 		{
@@ -251,7 +265,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW9BOWIF?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/avatars/c/5/c5c7d43a4c72761be22c07e3db01cd0e_1511498945.jpg",
 			AlbumId = 5,
-			Genre = "Rap"
+			Genre = "Rap",
+			ArtistName = "Binz"
 		},
 		new Track
 		{
@@ -261,7 +276,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZOW0OBU8?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/0/5/6/40564f839b476fd66838e497796a3d5f.jpg",
 			AlbumId = 5,
-			Genre = "Rap"
+			Genre = "Rap",
+			ArtistName = "Binz"
 		},
 		new Track
 		{
@@ -271,7 +287,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZWCOE0E8?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/5/a/5/1/5a5164496ababbca1496193ec8b8afb1.jpg",
 			AlbumId = 5,
-			Genre = "Rap"
+			Genre = "Rap",
+			ArtistName = "Binz"
 		},
 		new Track
 		{
@@ -281,7 +298,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZWB0U608?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/7/2/b/072ba9ae04687203d6f6af8e526ce631.jpg",
 			AlbumId = 5,
-			Genre = "Rap"
+			Genre = "Rap",
+			ArtistName = "Binz"
 		},
 		new Track
 		{
@@ -291,7 +309,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW9CD0E8?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/e/7/a/6/e7a669cae8bc05724a59bae10a9e02d3.jpg",
 			AlbumId = 5,
-			Genre = "Rap"
+			Genre = "Rap",
+			ArtistName = "Binz"
 		},
 		new Track
 		{
@@ -301,7 +320,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZWCO68F0?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/e/7/a/6/e7a669cae8bc05724a59bae10a9e02d3.jpg",
 			AlbumId = 4,
-			Genre = "Rap"
+			Genre = "Rap",
+			ArtistName = "Phúc Du"
 		},
 		new Track
 		{
@@ -311,7 +331,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZWAFU7A8?",
 			UrlImg = "https://photo-zmp3.zadn.vn/audio_default.png",
 			AlbumId = 4,
-			Genre = "Rap"
+			Genre = "Rap",
+			ArtistName = "Phúc Du"
 		},
 		new Track
 		{
@@ -321,7 +342,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZWA979O7?",
 			UrlImg = "https://photo-zmp3.zadn.vn/audio_default.png",
 			AlbumId = 4,
-			Genre = "Rap"
+			Genre = "Rap",
+			ArtistName = "Phúc Du"
 		},
 		new Track
 		{
@@ -331,7 +353,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW9BB96C?",
 			UrlImg = "https://photo-zmp3.zadn.vn/audio_default.png",
 			AlbumId = 4,
-			Genre = "Rap"
+			Genre = "Rap",
+			ArtistName = "Phúc Du"
 		},
 		new Track
 		{
@@ -341,7 +364,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW9BIZ8F?",
 			UrlImg = "https://photo-zmp3.zadn.vn/audio_default.png",
 			AlbumId = 4,
-			Genre = "Rap"
+			Genre = "Rap",
+			ArtistName = "Phúc Du"
 		},
 		new Track
 		{
@@ -351,7 +375,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZWBU778A?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/0/4/1/0041083628270504efdb6499396aacea.jpg",
 			AlbumId = 6,
-			Genre = "Kpop"
+			Genre = "Kpop",
+			ArtistName = "BLACKPINK"
 		},
 		new Track
 		{
@@ -361,7 +386,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW7UF079?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/8/4/5/f8456a22c05f9b96e0e832ae0b643bf0.jpg",
 			AlbumId = 6,
-			Genre = "Kpop"
+			Genre = "Kpop",
+			ArtistName = "BLACKPINK"
 		},
 		new Track
 		{
@@ -371,7 +397,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZWDFDW0B?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/0/4/1/0041083628270504efdb6499396aacea.jpg",
 			AlbumId = 6,
-			Genre = "Kpop"
+			Genre = "Kpop",
+			ArtistName = "BLACKPINK"
 		},
 		 new Track
 		 {
@@ -381,7 +408,8 @@ namespace MusicWorld.Models
 			 TrackLink = "https://zingmp3.vn/embed/song/ZWACDBZ6?",
 			 UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/0/4/1/0041083628270504efdb6499396aacea.jpg",
 			 AlbumId = 6,
-			 Genre = "Kpop"
+			 Genre = "Kpop",
+			 ArtistName = "BLACKPINK"
 		 },
 		new Track
 		{
@@ -391,7 +419,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW7UF080?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/8/4/5/f8456a22c05f9b96e0e832ae0b643bf0.jpg",
 			AlbumId = 6,
-			Genre = "Kpop"
+			Genre = "Kpop",
+			ArtistName = "BLACKPINK"
 		},
 		new Track
 		{
@@ -401,7 +430,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW7IUB6B?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/d/5/c/0d5c63ab2960f907a293fb86fd38f679.jpg",
 			AlbumId = 7,
-			Genre = "Kpop"
+			Genre = "Kpop",
+			ArtistName = "BIGBANG"
 		},
 		new Track
 		{
@@ -411,7 +441,8 @@ namespace MusicWorld.Models
 			TrackLink = "https://zingmp3.vn/embed/song/ZW70EZDD?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/d/5/c/0d5c63ab2960f907a293fb86fd38f679.jpg",
 			AlbumId = 7,
-			Genre = "Kpop"
+			Genre = "Kpop",
+			ArtistName = "BIGBANG"
 		},
 	   new Track
 	   {
@@ -421,7 +452,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZW7WW80U?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/d/5/c/0d5c63ab2960f907a293fb86fd38f679.jpg",
 		   AlbumId = 7,
-		   Genre = "Kpop"
+		   Genre = "Kpop",
+		   ArtistName = "BIGBANG"
 	   },
 	   new Track
 	   {
@@ -431,7 +463,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZWZEBEFC?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/2/3/a/023a13017664f8707b56b112a247e478.jpg",
 		   AlbumId = 7,
-		   Genre = "Kpop"
+		   Genre = "Kpop",
+		   ArtistName = "BIGBANG"
 	   },
 	   new Track
 	   {
@@ -441,7 +474,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZW7IAEWU?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/d/5/c/0d5c63ab2960f907a293fb86fd38f679.jpg",
 		   AlbumId = 7,
-		   Genre = "Kpop"
+		   Genre = "Kpop",
+		   ArtistName = "BIGBANG"
 	   },
 	   new Track
 	   {
@@ -451,7 +485,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZWBIFCUD?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/6/7/6/b/676be782f9b5e5951dfd7333d55211d2.jpg",
 		   AlbumId = 8,
-		   Genre = "EDM"
+		   Genre = "EDM",
+		   ArtistName = "Alan Walker"
 	   },
 	   new Track
 	   {
@@ -461,7 +496,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZWBIFCUE?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/9/f/4/e/9f4e2b8f713753e9aced9fcbed3e9c7e.jpg",
 		   AlbumId = 8,
-		   Genre = "EDM"
+		   Genre = "EDM",
+		   ArtistName = "Alan Walker"
 	   },
 	   new Track
 	   {
@@ -471,7 +507,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZWABOA0F?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/e/0/4/3/e04371bab7e3a83acf96e56e1df884d6.jpg",
 		   AlbumId = 8,
-		   Genre = "EDM"
+		   Genre = "EDM",
+		   ArtistName = "Alan Walker"
 	   },
 	   new Track
 	   {
@@ -481,7 +518,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZWA0OA6F?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/4/a/2/9/4a2973c762fa678dbdbce569bf26b2f0.jpg",
 		   AlbumId = 8,
-		   Genre = "EDM"
+		   Genre = "EDM",
+		   ArtistName = "Alan Walker"
 	   },
 	   new Track
 	   {
@@ -491,7 +529,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZW8WOI6U?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/c/d/cd5e9fea8071c159d382eded303e3a8c_1509329820.jpg",
 		   AlbumId = 8,
-		   Genre = "EDM"
+		   Genre = "EDM",
+		   ArtistName = "Alan Walker"
 	   },
 	   new Track
 	   {
@@ -501,7 +540,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZW79FA6Z?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/3/9/39247dd8f7a4a85f35647cf2d43d82ea_1487647777.jpg",
 		   AlbumId = 9,
-		   Genre = "EDM"
+		   Genre = "EDM",
+		   ArtistName = "DEAMS"
 	   },
 	   new Track
 	   {
@@ -511,7 +551,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZW9ABBFZ?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/c/d/cd5e9fea8071c159d382eded303e3a8c_1509329820.jpg",
 		   AlbumId = 9,
-		   Genre = "EDM"
+		   Genre = "EDM",
+		   ArtistName = "DEAMS"
 	   },
 	   new Track
 	   {
@@ -521,7 +562,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZW7FI0DI?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/9/c/9cb73f8d6d25437de31bcccf60d71af8_1492504627.jpg",
 		   AlbumId = 9,
-		   Genre = "EDM"
+		   Genre = "EDM",
+		   ArtistName = "DEAMS"
 	   },
 	   new Track
 	   {
@@ -531,7 +573,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZW9ABBFU?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/6/6/66a76d98e302493f0faeed53a0d9436e_1516362467.jpg",
 		   AlbumId = 9,
-		   Genre = "EDM"
+		   Genre = "EDM",
+		   ArtistName = "DEAMS"
 	   },
 	   new Track
 	   {
@@ -541,7 +584,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZWB0OIEZ?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/1/a/e/4/1ae486b36a0eeacd9623d2048c56c2b3.jpg",
 		   AlbumId = 9,
-		   Genre = "EDM"
+		   Genre = "EDM",
+		   ArtistName = "DEAMS"
 	   },
 	   new Track
 	   {
@@ -551,7 +595,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZWZ96WWD?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/0/c/0c1485a24cf001c56223be2879ae5f26_1290654489.jpg",
 		   AlbumId = 10,
-		   Genre = "Nhạc trữ tình"
+		   Genre = "Nhạc trữ tình",
+		   ArtistName = "Lệ Quyên"
 	   },
 	   new Track
 	   {
@@ -561,7 +606,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZW7I9WD0?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/1/e/1ea49f00f05ad0fff61a7a2c9110a1c1_1434966798.jpg",
 		   AlbumId = 10,
-		   Genre = "Nhạc trữ tình"
+		   Genre = "Nhạc trữ tình",
+		   ArtistName = "Lệ Quyên"
 	   },
 	   new Track
 	   {
@@ -571,7 +617,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZWZ96WIC?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/0/c/0c1485a24cf001c56223be2879ae5f26_1290654489.jpg",
 		   AlbumId = 10,
-		   Genre = "Nhạc trữ tình"
+		   Genre = "Nhạc trữ tình",
+		   ArtistName = "Lệ Quyên"
 	   },
 	   new Track
 	   {
@@ -581,7 +628,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZWZ96WO6?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/0/c/0c1485a24cf001c56223be2879ae5f26_1290654489.jpg",
 		   AlbumId = 10,
-		   Genre = "Nhạc trữ tình"
+		   Genre = "Nhạc trữ tình",
+		   ArtistName = "Lệ Quyên"
 	   },
 	   new Track
 	   {
@@ -591,7 +639,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZWZBFB9D?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/0/7/07c1bec1955a6d2c4b0ce8f651885d77_1305855806.jpg",
 		   AlbumId = 10,
-		   Genre = "Nhạc trữ tình"
+		   Genre = "Nhạc trữ tình",
+		   ArtistName = "Lệ Quyên"
 	   },
 	   new Track
 	   {
@@ -601,7 +650,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZW66WE08?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/6/9/69e96a1693d6c8669f195b0f60376e7e_1367125585.jpg",
 		   AlbumId = 11,
-		   Genre = "Nhạc trữ tình"
+		   Genre = "Nhạc trữ tình",
+		   ArtistName = "Đan Nguyên"
 	   },
 	   new Track
 	   {
@@ -611,7 +661,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZWZBA0E7?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/6/9/69e96a1693d6c8669f195b0f60376e7e_1367125585.jpg",
 		   AlbumId = 11,
-		   Genre = "Nhạc trữ tình"
+		   Genre = "Nhạc trữ tình",
+		   ArtistName = "Đan Nguyên"
 	   },
 	   new Track
 	   {
@@ -621,7 +672,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZW9ACWB8?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/4/d/4d00ecc3e7cbb8d5c2c211b0d826da5e_1286617072.jpg",
 		   AlbumId = 11,
-		   Genre = "Nhạc trữ tình"
+		   Genre = "Nhạc trữ tình",
+		   ArtistName = "Đan Nguyên"
 	   },
 	   new Track
 	   {
@@ -631,7 +683,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZW67AADE?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/7/0/7014824a73ba9e48258e1fdd40c56fdc_1376293810.jpg",
 		   AlbumId = 11,
-		   Genre = "Nhạc trữ tình"
+		   Genre = "Nhạc trữ tình",
+		   ArtistName = "Đan Nguyên"
 	   },
 	   new Track
 	   {
@@ -641,7 +694,8 @@ namespace MusicWorld.Models
 		   TrackLink = "https://zingmp3.vn/embed/song/ZW7I9WD0?",
 		   UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/8/0/8016166bb1d434a6266b97eeb5433759_1334483423.jpg",
 		   AlbumId = 11,
-		   Genre = "Nhạc trữ tình"
+		   Genre = "Nhạc trữ tình",
+		   ArtistName = "Đan Nguyên"
 	   }
 					);
 				context.SaveChanges();
@@ -651,7 +705,6 @@ namespace MusicWorld.Models
 				context.Artists.AddRange(
 					new Artist
 					{
-
 						ArtistName = "Hiền Hồ",
 						Achievement = "Năm 2015 Hiền Hồ tham gia cuộc thi “Tiếng hát truyền hình” và “Nhân tố bí ẩn” vào năm 2016. Sau đó, cô nộp hồ sơ để vào học tại Nhạc viện Thành phố Hồ Chí Minh.",
 						ImgUrl = "https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/c/0/3/f/c03f60341b00fdc0492dc0469020fcf9.jpg"

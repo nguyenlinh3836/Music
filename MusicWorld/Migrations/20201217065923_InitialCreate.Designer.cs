@@ -10,7 +10,7 @@ using MusicWorld.Models;
 namespace MusicWorld.Migrations
 {
     [DbContext(typeof(MusicDbContext))]
-    [Migration("20201215080500_InitialCreate")]
+    [Migration("20201217065923_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -101,6 +101,9 @@ namespace MusicWorld.Migrations
 
                     b.Property<int?>("AlbumId")
                         .HasColumnType("int");
+
+                    b.Property<string>("ArtistName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Duration")
                         .HasColumnType("nvarchar(max)");
