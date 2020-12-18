@@ -9,6 +9,9 @@ namespace MusicWorld.Models.ViewModels
     public class TrackListViewModel
     {
         public IEnumerable<Track> Tracks { get; set; }
+        public IEnumerable<Album> Albums { get; set; }
+
+      
         public PageInfo PageInfo { get; set; }
 
         public string CurrentGenre { get; set; }

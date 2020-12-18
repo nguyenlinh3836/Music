@@ -1,0 +1,33 @@
+﻿
+@model IQueryable<Album>
+
+<environment>
+    <link rel="stylesheet" href="/css/Album.css" />
+</environment>
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="bvh-h2-title text-center"><a href="#"><span>DANG SÁCH ALBUM</span></a></h2>
+    </div>
+</div>
+
+<div class="row">
+    @foreach (var q in Model)
+    {
+        <div class="wrapper">
+            <div class="col-album-circle">
+                <div class="img-container">
+                    <a href="DetailAlbum/AlbumId=@q.AlbumId">
+                        <i class="far fa-play-circle"></i>
+                        <img src="@q.ImgAlbum">
+                    </a>
+                </div>
+            </div>
+            <div class="bvh-item">
+                <div class="bvh-item-info">
+                    <h6 class="bvh-item-h3 text-center"><a href="">@q.AlbumName</a></h6>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

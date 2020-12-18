@@ -1,0 +1,19 @@
+﻿@using MusicWorld.Models.ViewModels
+@model TrackListViewModel
+
+
+@foreach(var p in Model.Albums)
+{
+    <div>
+        @foreach(var q in Model.Tracks)
+        {
+            if(p.AlbumId == q.AlbumId)
+            {
+                <p></p>
+            }
+        }       
+
+
+    </div>
+
+}

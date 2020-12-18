@@ -164,3 +164,6 @@ C:\Users\Admin\source\repos\Music\MusicWorld\obj\Debug\netcoreapp3.1\staticwebas
 C:\Users\Admin\source\repos\Music\MusicWorld\obj\Debug\netcoreapp3.1\MusicWorld.genruntimeconfig.cache
 C:\Users\LEGION\source\repos\MusicWorld\MusicWorld\obj\Debug\netcoreapp3.1\Razor\Views\Artist\Artist.cshtml.g.cs
 C:\Users\LEGION\source\repos\MusicWorld\MusicWorld\obj\Debug\netcoreapp3.1\Razor\Views\Home\DetailTrack.cshtml.g.cs
+C:\Users\LEGION\source\repos\MusicWorld\MusicWorld\obj\Debug\netcoreapp3.1\Razor\Views\Album\Index.cshtml.g.cs
+C:\Users\LEGION\source\repos\MusicWorld\MusicWorld\obj\Debug\netcoreapp3.1\Razor\Views\List\Index.cshtml.g.cs
+C:\Users\LEGION\source\repos\MusicWorld\MusicWorld\obj\Debug\netcoreapp3.1\Razor\Views\Album\DetailAlbum.cshtml.g.cs
