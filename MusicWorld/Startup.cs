@@ -68,6 +68,10 @@ namespace MusicWorld
                 endpoints.MapControllerRoute("DetailTrack",
                      "DetailTrack/TrackId={TrackId}",
                      new { Controller = "Home", action = "DetailTrack", TrackId = 1 });
+
+                endpoints.MapControllerRoute("DetailAlbum",
+                  "DetailAlbum/AlbumId={AlbumId}",
+                  new { Controller = "Album", action = "DetailAlbum", AlbumId = 1 });
                 endpoints.MapDefaultControllerRoute();
                 endpoints.MapRazorPages();
             });

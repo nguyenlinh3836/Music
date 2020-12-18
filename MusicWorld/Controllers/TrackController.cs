@@ -28,9 +28,7 @@ namespace MusicWorld.Controllers
                 .Include(ta => ta.Track)
                 .ToListAsync();                  
             return View(tracks);
-        }
-
-        
+        }    
 
 
 

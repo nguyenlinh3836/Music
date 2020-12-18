@@ -42,10 +42,9 @@ namespace MusicWorld.Controllers
         public ViewResult DetailTrack(int TrackId)
             => View(new TrackListViewModel { 
                   Tracks = repository.Tracks
-                .Where(p => p.TrackId == TrackId)        
+                .Where(p => p.TrackId == TrackId)       
                         
-            });
-        
+            });     
 
 
 
