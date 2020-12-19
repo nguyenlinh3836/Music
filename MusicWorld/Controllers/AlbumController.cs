@@ -23,12 +23,15 @@ namespace MusicWorld.Controllers
             => View(new TrackListViewModel{
                 Albums = repository.Albums                
                 .Where(p => p.AlbumId == AlbumId),
-                Tracks = repository.Tracks
-           
-                 
-                 
+                Tracks = repository.Tracks     
+               });
 
-                
-         });       
+        public ViewResult DetailTrack(int TrackId)
+          => View(new TrackListViewModel
+          {
+              Tracks = repository.Tracks
+              .Where(p => p.TrackId == TrackId)
+
+          });
     }
 }

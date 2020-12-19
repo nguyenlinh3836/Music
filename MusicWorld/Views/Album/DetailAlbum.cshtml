@@ -2,18 +2,77 @@
 @model TrackListViewModel
 
 
+    <style>
+        .container {
+            padding: 2rem 0rem;
+        }
+
+        h4 {
+            margin: 2rem 0rem 1rem;
+        }
+
+        .table-image
+        td, th {
+            vertical-align: middle;
+        }
+
+        .img {
+            border-radius: 5px;
+            text-align: center;
+            max-height: 300px;
+            max-width: 300px;
+            margin-left: 35px;
+        }
+
+        .trackname {
+            text-align: center;
+            font-weight: bolder;
+            font-size: 21px;
+            margin-top: 10px;
+        }
+
+        .artistname {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .addtrack {
+            color: red;
+        }
+    </style>
+
 @foreach(var p in Model.Albums)
 {
-    <div>
-        @foreach(var q in Model.Tracks)
-        {
-            if(p.AlbumId == q.AlbumId)
-            {
-                <p></p>
-            }
-        }       
-
-
+<div class="row coll-md-9">
+    <div class="col-4">
+        <img class="img" src="@p.ImgAlbum" />
+        <div class="trackname">@p.AlbumName</div>        
     </div>
+   
+
+    <div class="col-8">
+        <table class="table table-image">
+            <tbody>
+                @foreach (var q in Model.Tracks)
+                    if(p.AlbumId == q.AlbumId)
+                {
+                    <tr>
+                        <td scope="row">1</td>
+                        <td class="w-25">
+                            <img src="@q.UrlImg" height="70px" width="70px">
+                        </td>
+                        <td>
+                            <a class="TrackName" href="DetailTrack/TrackId=@q.TrackId">@q.TrackName</a>
+                            <div class="ArtistName">@q.ArtistName</div>
+                        </td>
+                        <td class="time">@q.Duration</td>
+                        <td class="addtrack"><i class="far fa-heart"></i></td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
 
 }

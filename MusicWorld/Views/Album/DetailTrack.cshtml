@@ -1,0 +1,18 @@
+﻿@using MusicWorld.Models.ViewModels
+@model TrackListViewModel
+<style>
+    iframe {
+       width:1000px !important;  
+       height:700px !important;
+    }
+</style>
+
+    @foreach (var p in Model.Tracks)
+    {
+<div class="col-12">  
+    <iframe scrolling="no" class="m-3" style="border: 0"
+            src=@p.TrackLink frameborder="0" allowfullscreen="true" />
+</div>        
+    }
+
+
