@@ -99,7 +99,7 @@ namespace MusicWorld.Models
 						Duration = "04:41",
 						TrackLink = "https://zingmp3.vn/embed/song/ZWADIOCC?",
 						UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/2/7/d/9/27d9bf0671538484ddc719c125cba369.jpg",
-						AlbumId = 2,
+						AlbumId = 1,
 						Genre = "Pop",
 						ArtistName="Min"
 					},
@@ -110,7 +110,7 @@ namespace MusicWorld.Models
 			Duration = "03:54",
 			TrackLink = "https://zingmp3.vn/embed/song/ZW7FODC9?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/f/3/f3ccdd27d2000e3f9255a7e3e2c48800_1493277779.jpg",
-			AlbumId = 2,
+			AlbumId = 1,
 			Genre = "Pop",
 			ArtistName = "Min"
 		},
@@ -121,7 +121,7 @@ namespace MusicWorld.Models
 			Duration = "04:07",
 			TrackLink = "https://zingmp3.vn/embed/song/ZW7FC0I7?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/d/0/d05f9b3c87cf7ccda468174b28757489_1495770525.jpg",
-			AlbumId = 2,
+			AlbumId = 1,
 			Genre = "Pop",
 			ArtistName = "Min"
 		},
@@ -132,7 +132,7 @@ namespace MusicWorld.Models
 			Duration = "03:51",
 			TrackLink = "https://zingmp3.vn/embed/song/ZWB0IFW8?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/3/a/c/03ac82cbf720ea5d24129dc5a2bb5bbe.jpg",
-			AlbumId = 2,
+			AlbumId = 1,
 			Genre = "Pop",
 			ArtistName = "Min"
 		},
@@ -143,7 +143,7 @@ namespace MusicWorld.Models
 			Duration = "03:51",
 			TrackLink = "https://zingmp3.vn/embed/song/ZW9ABW0E?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/e/4/e4dabc639b203d00bbefe9d488353716_1516266450.jpg",
-			AlbumId = 2,
+			AlbumId = 1,
 			Genre = "Pop",
 			ArtistName = "Min"
 		},
@@ -154,7 +154,7 @@ namespace MusicWorld.Models
 			Duration = "04:37",
 			TrackLink = "https://zingmp3.vn/embed/song/ZOI6BFA9?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/f/a/4/b/fa4b429fda0c4d3d2100f64ad3c7a616.jpg",
-			AlbumId = 1,
+			AlbumId = 2,
 			Genre = "Pop",
 			ArtistName = "Hiền Hồ"
 		},
@@ -165,7 +165,7 @@ namespace MusicWorld.Models
 			Duration = "04:34",
 			TrackLink = "https://zingmp3.vn/embed/song/ZWAF8DOB?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/3/f/5/8/3f588b3f74b49a8b2c70bc771df103bd.jpg",
-			AlbumId = 1,
+			AlbumId = 2,
 			Genre = "Pop",
 			ArtistName = "Hiền Hồ"
 		},
@@ -176,7 +176,7 @@ namespace MusicWorld.Models
 			Duration = "04:38",
 			TrackLink = "https://zingmp3.vn/embed/song/ZW9C0DWE?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/0/b/b/5/0bb55eaf1f19451a075759258eab718d.jpg",
-			AlbumId = 1,
+			AlbumId = 2,
 			Genre = "Pop",
 			ArtistName = "Hiền Hồ"
 		},
@@ -187,7 +187,7 @@ namespace MusicWorld.Models
 			Duration = "04:48",
 			TrackLink = "https://zingmp3.vn/embed/song/ZW8WUICD?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/covers/4/f/4f33a5712c26714f0a1e7177d0b4129d_1509608464.jpg",
-			AlbumId = 1,
+			AlbumId = 2,
 			Genre = "Pop",
 			ArtistName = "Hiền Hồ"
 		},
@@ -198,7 +198,7 @@ namespace MusicWorld.Models
 			Duration = "04:27",
 			TrackLink = "https://zingmp3.vn/embed/song/ZW9EO8WO?",
 			UrlImg = "https://photo-resize-zmp3.zadn.vn/w94_r1x1_jpeg/cover/1/2/b/8/12b88922410ad579dce22031b12c05ca.jpg",
-			AlbumId = 1,
+			AlbumId = 2,
 			Genre = "Pop",
 			ArtistName = "Hiền Hồ"
 		},
