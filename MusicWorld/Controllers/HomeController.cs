@@ -44,8 +44,14 @@ namespace MusicWorld.Controllers
                   Tracks = repository.Tracks
                 .Where(p => p.TrackId == TrackId)       
                         
-            });     
+            });
 
+
+        public ViewResult SearchResult(string searchString)
+       => View(new TrackListViewModel {
+                Tracks = repository.Tracks
+           .Where(s => s.TrackName.Contains(searchString))    
+      });
 
 
 
