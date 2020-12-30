@@ -138,7 +138,7 @@ namespace MusicWorld.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var album = await _context.Albums.FindAsync(id);
+            var album = await _context.Albums.Where(a=>a.AlbumId==id).Include(x=>x.Tracks).FirstOrDefaultAsync();
             _context.Albums.Remove(album);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

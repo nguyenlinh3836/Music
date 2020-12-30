@@ -18,7 +18,15 @@ namespace MusicWorld.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ArtistAlbum>().HasKey(vf => new { vf.ArtistId, vf.AlbumId });
-            modelBuilder.Entity<ArtistTrack>().HasKey(vk => new { vk.ArtistId, vk.TrackId });            
+            modelBuilder.Entity<ArtistTrack>().HasKey(vk => new { vk.ArtistId, vk.TrackId });
+            modelBuilder.Entity<Track>()
+                .HasOne<Album>(e => e.Album)
+                .WithMany(d => d.Tracks)
+                .HasForeignKey(e => e.AlbumId)
+                .IsRequired(true)
+                .OnDelete(DeleteBehavior.Cascade);
+           
+          
         }      
     
 
