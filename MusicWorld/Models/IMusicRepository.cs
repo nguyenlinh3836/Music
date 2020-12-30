@@ -9,7 +9,7 @@ namespace MusicWorld.Models
     {
         IQueryable<Track> Tracks { get; }        
         IQueryable<Album> Albums{ get; }
-        IQueryable<Artist> Artists { get; }
+        IQueryable<Artist> Artists { get; }      
         
     }
 }

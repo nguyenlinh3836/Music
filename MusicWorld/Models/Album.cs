@@ -15,8 +15,7 @@ namespace MusicWorld.Models
         public string AlbumName { get; set; }
         public string ImgAlbum { get; set; }
 
-        public virtual ICollection<ArtistAlbum> ArtistAlbums { get; set; }
-        [ForeignKey("AlbumId")]
+        public virtual ICollection<ArtistAlbum> ArtistAlbums { get; set; }       
         public virtual ICollection<Track> Tracks { get; set; }
     }
 }

@@ -10,12 +10,14 @@ namespace MusicWorld.Models
         private MusicDbContext context;
         public EFMusicRepository(MusicDbContext ctx)
         {
-            context = ctx;     
+            context = ctx;    
         
         }
         public IQueryable<Artist> Artists => context.Artists;
         public IQueryable<Album> Albums => context.Albums;
         public IQueryable<Track> Tracks => context.Tracks;
+
+       
        
     }    
 }
